@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1 className="title">Análise Financeira Futurista</h1>
+      <h1 className="title">Análise Financeira</h1>
       <div className="grid-container">
         <SumComponent/>
         <FibonacciChecker />
