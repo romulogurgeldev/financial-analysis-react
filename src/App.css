@@ -1,51 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #1e2a47, #2c3e50); /* Gradiente mais suave */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3em;
+  color: #00bcd4;
+  padding: 20px;
+  text-align: center; /* Centraliza o texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s, color 0.3s ease, text-shadow 0.3s;
+}
+
+.title:hover {
+  transform: scale(1.05);
+  color: #4fc3f7; /* Azul mais claro */
+  text-shadow: 2px 2px 6px rgba(0, 188, 212, 0.6); /* Sombra mais suave */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.futuristic-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00bcd4;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
   
+  display: flex;
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Garante que o texto também fique centralizado */
+}
+
+.futuristic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+button {
+  background-color: #00bcd4;
+  color: #003d47;
+  border: 1px solid #00bcd4; /* Borda sutil */
+  margin-left: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: block; /* Torna o botão um bloco para centralização */
+  margin: 10px auto; /* Centraliza o botão */
+}
+
+button:hover {
+  background-color: #4fc3f7;
+  border-color: #4fc3f7; /* Borda muda com o hover */
+}
+
+@media (max-width: 768px) {
   .title {
-    text-align: center;
-    font-size: 2.5em;
-    color: #00ffcc;
-    padding: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      font-size: 2em;
+      padding: 15px;
   }
   
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+      padding: 15px;
   }
-  
+
   .futuristic-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #00ffcc;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+      padding: 10px;
   }
-  
-  .futuristic-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
+
   button {
-    background-color: #00ffcc;
-    color: #003333;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+      padding: 8px 12px;
   }
-  
-  button:hover {
-    background-color: #009999;
-  }
-  
+}

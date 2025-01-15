@@ -23,13 +23,13 @@ const SumComponent = () => {
 
   return (
     <div className='component-container futuristic-card'>
-      <button onClick={calcularSoma}>Calcular Soma</button>
-      
+      <h2>Soma</h2>
       {/* Exibindo os termos somados */}
       <p>Termos somados: {termos.join(' + ')}</p>
-      
       {/* Exibindo o resultado final da soma */}
       <p>A soma é: {soma}</p>
+      
+      <button onClick={calcularSoma}>Calcular Soma</button>
     </div>
   );
 };
